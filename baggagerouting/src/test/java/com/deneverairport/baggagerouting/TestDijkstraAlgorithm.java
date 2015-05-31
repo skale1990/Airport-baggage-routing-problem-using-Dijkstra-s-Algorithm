@@ -2,6 +2,7 @@ package com.deneverairport.baggagerouting;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -118,7 +119,7 @@ public class TestDijkstraAlgorithm extends TestCase{
 		departures.put("UA18", nodes.get(5));
 		departures.put("ARRIVAL", nodes.get(11));
 		
-		bags = new TreeMap<>();
+		bags = new LinkedHashMap<>();
 		bags.put("0001", new Vertex[]{nodes.get(0), departures.get("UA12")} );
 		bags.put("0002", new Vertex[]{nodes.get(5), departures.get("UA17")} );
 		bags.put("0003", new Vertex[]{nodes.get(2), departures.get("UA10")} );
